@@ -43,7 +43,7 @@
 }
 
 .hero{
-    height: 600px;
+    min-height: 600px;
     background-image: url(imagenes/casaembrujada.jpg);
     background-position: center;
     background-size: cover;
@@ -92,7 +92,16 @@
     justify-content: center;
     margin-top: 20px;
     
+    
 }
+
+.card{
+    max-width: fit-content;
+    background-color: black;
+    border: 3px solid red;
+    
+}
+
 
 .titulo-tarjeta{
     text-align: center;
@@ -287,6 +296,22 @@ footer{
     margin-left: 30px;
     color: #fff;
     background-color: crimson;
+    font-family: "lobster";
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: red;
+    font-family: "nosifer";
+    letter-spacing: 2px;
+    background-image: url(imagenes/mask-g24e27223a_640.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .titulo-formulario{
