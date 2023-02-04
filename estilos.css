@@ -106,9 +106,10 @@
 .titulo-tarjeta{
     text-align: center;
     text-transform: capitalize;
-    color: black;
+    color: #FFF;
     font-family: "lobster";
-    font-size: 24px;
+    font-size: 28px;
+    letter-spacing: 3px;
     
     
     
@@ -138,7 +139,7 @@
 }
 
 
-.boton{
+.boton-form{
     background-color: black;
     color:#FFF;
     text-align: center;
@@ -147,14 +148,6 @@
         
     
 
-}
-
-.boton:hover{
-    font-family: "nosifer";
-    color: red;
-    background-color: #fff;
-    border: 2px solid red;
-    
 }
 
 .footer{
@@ -292,7 +285,7 @@ footer{
     font-size: 20px;
 }
 
-.btn{
+.boton-form{
     margin-left: 30px;
     color: #fff;
     background-color: crimson;
@@ -301,9 +294,10 @@ footer{
     font-size: 20px;
     border-radius: 50px;
     padding: 10px;
+    border: 2px solid #FFF;
 }
 
-.btn:hover{
+.boton-form:hover{
     background-color: black;
     color: red;
     font-family: "nosifer";
@@ -324,7 +318,26 @@ footer{
     margin: 30px 10px;
 }
 
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.contenedor_ouija{
+    position: relative;
+}
+.ouija{
+    
+    width: 400px;
+    border-radius: 50%;
+    animation-name: mover;
+    animation-duration: 10s;
+    animation-timing-function: 2;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
 
 
 @keyframes animacion{
@@ -339,3 +352,25 @@ footer{
 
     }
 
+    @keyframes mover{
+        10%{
+            transform: translateY(-20px);
+            animation-timing-function: ease-in-out;
+        }
+      
+        30%{
+        transform: translateY(-50px);
+        animation-timing-function: ease-in-out;
+    }
+        60%{
+        transform: translateY(-80px);
+        animation-timing-function: ease-in-out;
+
+
+}
+
+    100%{
+        transform: translateY(100px);
+        animation-timing-function: ease-in-out;
+    }
+}
