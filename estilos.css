@@ -374,3 +374,11 @@ footer{
         animation-timing-function: ease-in-out;
     }
 }
+
+@media only screen and (max-width: 700px){
+        .section{
+            display: flex;
+            flex-direction: column;
+        }
+}
+  
