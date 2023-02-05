@@ -173,6 +173,7 @@
     gap: 10px;
     letter-spacing: 5px;
     font-family: "lobster";
+    color: orange;
 
 }
 .redes a{
@@ -323,6 +324,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 .contenedor_ouija{
@@ -338,6 +340,7 @@ footer{
     animation-delay: 2s;
     animation-timing-function: ease-in-out;
 }
+
 
 
 @keyframes animacion{
@@ -380,5 +383,13 @@ footer{
             display: flex;
             flex-direction: column;
         }
+
+        .link{
+            font-size: 20px;
+        }
 }
-  
+@media only screen and (max-width: 350px){
+    .link{
+        font-size: 18px;
+    }
+}
