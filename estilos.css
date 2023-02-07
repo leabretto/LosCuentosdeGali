@@ -358,9 +358,13 @@ footer{
 .sub-titulo--lunallena{
     font-size: 28px;
     font-weight: 700;
-    text-decoration: underline;
     margin-left: 10px;
     margin-bottom: 25px;
+    color: crimson;
+    font-family: "lobster";
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: black;
     
 }
 .parrafo-lunallena{
@@ -420,5 +424,69 @@ footer{
 @media only screen and (max-width: 350px){
     .link{
         font-size: 18px;
+    }
+}
+
+.foto-cap2{
+    width: 350px;
+    border-radius: 30px;
+}
+
+.foto-cap5{
+    width: 500px;
+    border-radius: 40px;
+    
+}
+
+.foto-cap4{
+    width: 300px;
+    border-radius: 40px;
+    margin-left: 30px;
+}
+.cap1{
+    background-color: beige;
+}
+
+.cap3{
+    background-color: beige;
+}
+
+.cap2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: beige;
+}
+
+.cap4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: beige;
+}
+
+.cap5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: beige;
+}
+
+@media only screen and (max-width:860px){
+    .cap2{
+        flex-direction: column-reverse;
+    }
+    .cap4{
+        flex-direction: column;
+    }
+
+    .cap5{
+        flex-direction: column;
     }
 }
