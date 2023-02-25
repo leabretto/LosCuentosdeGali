@@ -130,11 +130,13 @@
     border: 2px solid red;
     border-radius: 10px;
     object-fit: cover;
+    height: 78%;
+    transform: scaleX(1);
     
 }
 
 .img-card:hover{
-    transform: translatey(-20px);
+    transform: scale(1.1);
     
 }
 
@@ -489,4 +491,113 @@ footer{
     .cap5{
         flex-direction: column;
     }
+}
+
+/* pagina de Barco fantasma */
+
+.cont-barco{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "c1 c1 c2"
+    "c3 c3 c2"
+    "c4 c5 c5"
+    "c4 c6 c6";
+    grid-gap: 10px;
+    padding: 20px;
+
+}
+.capitulo{
+    
+    border: 3px rgb(146, 8, 8) solid;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 2px;
+    
+}
+
+.capitulo p{
+    text-align: center;
+    font-family: "chewy";
+    font-size: 20px;
+}
+
+.capitulo h3{
+    font-family: "lobster";
+    text-align: center;
+    font-weight: 700;
+    padding: 15px;
+    color: crimson;
+    background-color: darkgray;
+    border-radius: 20px;
+}
+.capitulo1{
+    grid-area: c1;
+    background-image: url(imagenes/barco\ \(1\).jpg);
+    color: aliceblue;
+    font-weight: 900;
+    
+}
+.capitulo1 p{
+    background-color: rgba(0, 0, 0, 0.304);
+}
+
+.capitulo2{
+    grid-area: c2;
+    background-image:url(imagenes/skeleton-2232884_1280.jpg);
+    object-fit: contain;
+    color: aliceblue;
+    font-weight: 900;
+    
+    
+}
+.capitulo2 p{
+    background-color: rgba(0, 0, 0, 0.304);
+}
+.capitulo3{
+    grid-area: c3;
+    background-image: url(imagenes/ai-generated-7808799_1280.jpg);
+    color: aliceblue;
+    font-weight: 900;
+}
+.capitulo3 p{
+    background-color: rgba(0, 0, 0, 0.304);
+}
+.capitulo4{
+    grid-area: c4;
+    background-image: url(imagenes/phone-wallpaper-1205261_1280.jpg);
+    color: aliceblue;
+    font-weight: 900;
+}
+.capitulo4 p{
+    background-color: rgba(0, 0, 0, 0.304);
+}
+
+.capitulo5{
+    grid-area: c5;
+    background-image: url(imagenes/ouija-g4575bcf83_1280.jpg);
+    background-image: linear-gradient(rgba(32, 25, 25, 0.089)), url(imagenes/ouija-g4575bcf83_1280.jpg) ;
+    color: aliceblue;
+    font-weight: 900;
+    
+}
+
+.capitulo5 p{
+    background-color: rgba(0, 0, 0, 0.304);
+}
+.capitulo6{
+    grid-area: c6;
+    background-image: url(imagenes/fantasma.jpg);
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.capitulo6 p{
+    background-color: rgba(0, 0, 0, 0.304);
+}
+
+.seccion-barco{
+    background-color: black;
 }
