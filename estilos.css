@@ -601,3 +601,12 @@ footer{
 .seccion-barco{
     background-color: black;
 }
+
+/* alma perdidad */
+
+.alma{
+    font-family: "nosifer";
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
